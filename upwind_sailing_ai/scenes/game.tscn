@@ -1,0 +1,218 @@
+[gd_scene load_steps=7 format=3 uid="uid://bnxbw4kiy71jc"]
+
+[ext_resource type="PackedScene" uid="uid://b2kq11ikh4c8" path="res://scenes/boat.tscn" id="1_aigm1"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_djve5"]
+[ext_resource type="PackedScene" uid="uid://bdwlfsqub6kul" path="res://scenes/wind.tscn" id="2_x04hs"]
+[ext_resource type="PackedScene" uid="uid://b88oouo6kde5s" path="res://scenes/target.tscn" id="4_whrik"]
+[ext_resource type="Script" path="res://addons/godot_rl_agents/sync.gd" id="5_4737x"]
+[ext_resource type="PackedScene" uid="uid://c6it2ag7aan4e" path="res://scenes/border.tscn" id="6_wytyp"]
+
+[node name="game" type="Node2D"]
+script = ExtResource("1_djve5")
+
+[node name="boat" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+
+[node name="boat2" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 2
+
+[node name="boat3" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 4
+
+[node name="boat4" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 8
+
+[node name="boat5" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 16
+
+[node name="boat6" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 32
+
+[node name="boat7" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 64
+
+[node name="boat8" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 128
+
+[node name="boat9" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 256
+
+[node name="boat10" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 512
+
+[node name="boat11" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 1024
+
+[node name="boat12" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 2048
+
+[node name="boat13" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 4096
+
+[node name="boat14" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 8192
+
+[node name="boat15" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 16384
+
+[node name="boat16" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 32768
+
+[node name="boat17" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 65536
+
+[node name="boat18" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 131072
+
+[node name="boat19" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 262144
+
+[node name="boat20" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 524288
+
+[node name="boat21" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 1048576
+
+[node name="boat22" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 2097152
+
+[node name="boat23" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 4194304
+
+[node name="boat24" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 8388608
+
+[node name="boat25" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 16777216
+
+[node name="boat26" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 33554432
+
+[node name="boat27" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 67108864
+
+[node name="boat28" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 134217728
+
+[node name="boat29" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 268435456
+
+[node name="boat30" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 536870912
+
+[node name="boat31" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 1073741824
+
+[node name="boat32" parent="." instance=ExtResource("1_aigm1")]
+position = Vector2(131, 334)
+rotation = -0.016704
+scale = Vector2(0.5, 0.5)
+collision_layer = 2147483648
+
+[node name="wind" parent="." instance=ExtResource("2_x04hs")]
+
+[node name="target" parent="." instance=ExtResource("4_whrik")]
+position = Vector2(1111, 336)
+scale = Vector2(3.04, 3.04)
+
+[node name="Sync" type="Node" parent="."]
+script = ExtResource("5_4737x")
+action_repeat = 4
+
+[node name="border" parent="." instance=ExtResource("6_wytyp")]
+rotation = 3.14159
+
+[node name="border2" parent="." instance=ExtResource("6_wytyp")]
+position = Vector2(2, 645)

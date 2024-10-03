@@ -1,0 +1,1 @@
+pip install godot-rl & python "stable_baselines3_example.py" --env_path "upwind_sailing_ai\env\level_2.exe" --resume_model_path "e2_10000000_steps.zip" --inference True --viz True

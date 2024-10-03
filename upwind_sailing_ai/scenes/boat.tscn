@@ -1,0 +1,76 @@
+[gd_scene load_steps=8 format=3 uid="uid://b2kq11ikh4c8"]
+
+[ext_resource type="Script" path="res://scripts/boat.gd" id="1_abpqa"]
+[ext_resource type="Script" path="res://scripts/sail.gd" id="1_v73br"]
+[ext_resource type="Script" path="res://scripts/radar.gd" id="2_l8rno"]
+[ext_resource type="Script" path="res://scripts/AIController2D.gd" id="4_hkbcl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_qq8qu"]
+size = Vector2(46, 5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rbv0o"]
+size = Vector2(40, 19)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_hgy5t"]
+size = Vector2(10, 2)
+
+[node name="boat" type="CharacterBody2D"]
+scale = Vector2(0.359999, 0.359999)
+collision_mask = 0
+script = ExtResource("1_abpqa")
+
+[node name="sail" type="CharacterBody2D" parent="."]
+z_index = 5
+rotation = -0.00307357
+scale = Vector2(1, 0.520248)
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("1_v73br")
+
+[node name="ColorRect" type="ColorRect" parent="sail"]
+offset_left = -23.0
+offset_top = -2.0
+offset_right = 17.0
+offset_bottom = 38.0
+scale = Vector2(1.1659, 0.12)
+color = Color(1, 0.309804, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="sail"]
+position = Vector2(0, 0.5)
+shape = SubResource("RectangleShape2D_qq8qu")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 0.500001)
+shape = SubResource("RectangleShape2D_rbv0o")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -20.0
+offset_top = -9.0
+offset_right = 20.0
+offset_bottom = 31.0
+scale = Vector2(1, 0.48)
+color = Color(0.109804, 0.796078, 0.356863, 1)
+
+[node name="radar" type="CharacterBody2D" parent="."]
+z_index = -5
+position = Vector2(-20, 0)
+rotation = -0.00180926
+scale = Vector2(1.40014, 1)
+collision_layer = 0
+collision_mask = 0
+script = ExtResource("2_l8rno")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="radar"]
+position = Vector2(0.00178528, 0.00952581)
+shape = SubResource("RectangleShape2D_hgy5t")
+
+[node name="ColorRect" type="ColorRect" parent="radar"]
+offset_left = -4.99822
+offset_top = -0.990474
+offset_right = 35.0018
+offset_bottom = 39.0095
+scale = Vector2(0.256604, 0.0400007)
+color = Color(0.929412, 0.745098, 0.235294, 1)
+
+[node name="AIController2D" type="Node2D" parent="."]
+script = ExtResource("4_hkbcl")

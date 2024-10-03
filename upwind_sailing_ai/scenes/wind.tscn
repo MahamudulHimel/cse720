@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bdwlfsqub6kul"]
+
+[ext_resource type="Script" path="res://scripts/wind.gd" id="1_i0oqs"]
+[ext_resource type="Texture2D" uid="uid://c4lfu5h5vnj68" path="res://sprite/Martz90-Circle-Addon2-Downloads.512.png" id="2_s1fpt"]
+
+[node name="wind" type="Node2D"]
+script = ExtResource("1_i0oqs")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1050, 87)
+rotation = 4.71239
+scale = Vector2(0.2, 0.2)
+texture = ExtResource("2_s1fpt")

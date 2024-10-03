@@ -1,0 +1,30 @@
+[gd_scene load_steps=7 format=3 uid="uid://dtd3evmrfseix"]
+
+[ext_resource type="PackedScene" uid="uid://b2kq11ikh4c8" path="res://scenes/boat.tscn" id="1_2gx5h"]
+[ext_resource type="Script" path="res://scripts/game.gd" id="1_wfcy1"]
+[ext_resource type="PackedScene" uid="uid://b88oouo6kde5s" path="res://scenes/target.tscn" id="2_kygac"]
+[ext_resource type="PackedScene" uid="uid://bdwlfsqub6kul" path="res://scenes/wind.tscn" id="3_5rwne"]
+[ext_resource type="Script" path="res://addons/godot_rl_agents/sync.gd" id="5_68b67"]
+[ext_resource type="PackedScene" uid="uid://c6it2ag7aan4e" path="res://scenes/border.tscn" id="6_cgcom"]
+
+[node name="test" type="Node2D"]
+script = ExtResource("1_wfcy1")
+
+[node name="boat" parent="." instance=ExtResource("1_2gx5h")]
+position = Vector2(590, 294)
+scale = Vector2(1, 1)
+
+[node name="target" parent="." instance=ExtResource("2_kygac")]
+position = Vector2(1004, 271)
+
+[node name="wind" parent="." instance=ExtResource("3_5rwne")]
+
+[node name="Sync" type="Node" parent="."]
+script = ExtResource("5_68b67")
+control_mode = 0
+
+[node name="border" parent="." instance=ExtResource("6_cgcom")]
+rotation = 3.14056
+
+[node name="border2" parent="." instance=ExtResource("6_cgcom")]
+position = Vector2(4, 658)
