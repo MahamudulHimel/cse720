@@ -1,1 +1,1 @@
-"# cse720" 
+run "run.bat" from admin
